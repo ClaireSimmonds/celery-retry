@@ -70,7 +70,7 @@ def demo_task(x):
   z = x + y
   
   if len(z) < 5:
-    raise NotEnoughItemsError
+    raise NotEnoughItemsError('too few items')
 ```
 
 This configuration option may be useful to avoid retrying in cases when doing so would have no effect, such as an error explicitly raised in code or if the error is unrecoverable.
